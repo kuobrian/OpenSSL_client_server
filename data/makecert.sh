@@ -67,10 +67,10 @@ openssl x509 -in local_ca.crt -outform DER -out local_ca.der
 openssl x509 -in local_server.crt -outform DER -out local_server.der
 openssl x509 -in local_client.crt -outform DER -out local_client.der
 
-# mv local_ca.crt local_ca.key ca/
-# mv local_server.crt local_server.key server/
-# mv local_client.crt local_client.key client/
-mv local_ca.key data/ca/
+mv local_ca.crt local_ca.key data/ca/
+mv local_server.crt local_server.key data/server/
+mv local_client.crt local_client.key data/client/
+# mv local_ca.key data/ca/
 mv local_ca.der local_server.der local_client.der data/certDER/
 
 rm *.conf
