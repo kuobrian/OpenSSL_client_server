@@ -1,5 +1,5 @@
 
-# Use OpenSSL client certificate
+# Useing OpenSSL Client certificate
 
 + CA certificate
 + server and client (using Flask package)
